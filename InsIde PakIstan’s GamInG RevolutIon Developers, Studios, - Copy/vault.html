@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Portal – Signa</title>
+  <link rel="icon" type="image/png" href="./170ba712-048d-4b28-9853-f7a60df06289-md.jpeg">
+  <style>
+    /* Shared section base */
+    .game-section {
+      min-height: 100vh;
+      padding: 90px 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: #00ff00; /* neon green text */
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #060b14, #0b1f2a);
+    }
+
+    /* Grid layout */
+    .signa-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    /* Text styling */
+    .signa-text h1 {
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      color: #00ff00;
+      text-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 30px #00ff00;
+      transition: text-shadow 0.3s ease;
+    }
+    .signa-text h1:hover {
+      text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 60px #00ff00;
+    }
+
+    .signa-text .subtitle {
+      color: #00ff00;
+      margin: 10px 0 25px;
+      font-size: 1.1rem;
+    }
+
+    .signa-text .description {
+      line-height: 1.8;
+      opacity: 0.9;
+      margin-bottom: 25px;
+      color: #00ff00;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 8px 0;
+      border-left: 3px solid #00ff00;
+      padding-left: 12px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #00ff00;
+    }
+
+    /* Image styling */
+    .signa-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0, 255, 0, 0.25);
+      transform: scale(0.95);
+      transition: transform 0.6s ease;
+    }
+
+    .signa-image img:hover {
+      transform: scale(1);
+    }
+
+    /* Reveal animation */
+    .reveal {
+      animation: revealFade 1.4s ease forwards;
+    }
+
+    @keyframes revealFade {
+      from {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .signa-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section id="signa" class="game-section reveal">
+  <div class="container">
+    <div class="signa-grid">
+      <!-- Text -->
+      <div class="signa-text">
+        <h1>Signa</h1>
+        <p class="subtitle">Where symbols shape reality</p>
+        <p class="description">
+          Signa is a strategy-driven universe where every symbol, mark,
+          and decision carries meaning. Players decode ancient signals,
+          unlock hidden systems, and control outcomes using intelligence
+          rather than speed.
+        </p>
+        <ul class="features">
+          <li>Genre: Strategy / Puzzle</li>
+          <li>Core Focus: Logic & Decisions</li>
+          <li>Environment: Minimal Futuristic World</li>
+          <li>Gameplay: Symbol-Based Mechanics</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="signa-image">
+        <img src="./download.jpg" alt="Signa World">
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

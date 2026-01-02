@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeonGrid - Pulse</title>
+</head>
+<body>
+<section class="pulse">
+  <h2 class="pulse-title">PULSE</h2>
+  <p class="pulse-sub">Live Cyber News • City Reports • Game Updates</p>
+
+  <div class="pulse-feed" id="pulseFeed">
+    <div class="pulse-item">
+      [08:12] 🚨 Cyberstorm District: Hackers infiltrate local AI network; citizens report flickering street lights.
+    </div>
+    <div class="pulse-item">
+      [08:35] 📰 Tech Log: New experimental drones deployed for surveillance over the Neon Market.
+    </div>
+    <div class="pulse-item">
+      [09:01] 🎮 Game Alert: Shadow Run quest unlocked for all players in sector 7.
+    </div>
+    <div class="pulse-item">
+      [09:22] 🌐 Network Update: Server latency reduced by 15% after emergency patch.
+    </div>
+    <div class="pulse-item">
+      [09:45] 💡 Urban Insight: Street artists create holographic murals celebrating city resilience.
+    </div>
+  </div>
+</section>
+
+<style>
+body { background:#000; font-family:"Orbitron", Arial, sans-serif; color: #00ff00; }
+
+/* ===== PULSE SECTION ===== */
+.pulse {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px 25px;
+  background: rgba(0,0,0,.75);
+  border: 1px solid #00ff00;
+  border-radius: 16px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pulse-title {
+  font-size: 52px;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 60px #00ff00;
+  animation: pulse-glow 2s infinite alternate;
+}
+
+.pulse-sub {
+  margin-top: 10px;
+  color: #00ff00;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+/* ===== FEED ===== */
+.pulse-feed {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pulse-item {
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: rgba(0,0,0,.4);
+  color: #00ff00;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+  animation: pulse-slide 1s ease;
+  border-left: 4px solid #00ff00;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes pulse-glow {
+  0% { text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 60px #00ff00; }
+  50% { text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00; }
+  100% { text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 60px #00ff00; }
+}
+
+@keyframes pulse-slide {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+  .pulse-title { font-size:36px; }
+  .pulse-sub { font-size:14px; }
+  .pulse-item { font-size:14px; }
+}
+</style>
+
+<script>
+// ===== AUTO SCROLLING NEWS FEED =====
+const pulseFeed = document.getElementById('pulseFeed');
+
+function scrollPulse() {
+  const first = pulseFeed.firstElementChild;
+  pulseFeed.appendChild(first.cloneNode(true));
+  pulseFeed.removeChild(first);
+}
+
+setInterval(scrollPulse, 4000); // scroll every 4 seconds
+</script>
+</body>
+</html>

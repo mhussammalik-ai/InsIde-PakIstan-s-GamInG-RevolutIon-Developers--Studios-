@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyberpunk Gaming Container</title>
+<link rel="icon" type="image/png" href="./170ba712-048d-4b28-9853-f7a60df06289-md.jpeg">
+</head>
+<body>
+
+<div class="container">
+  <h2>National Mini Book</h2>
+  <img src="/download.jpg" alt="Cover">
+  <p>Welcome to the ultimate cyberpunk gaming hub! Click or explore as you scroll.</p>
+
+  <h2>Developers</h2>
+  <img src="./photo-1581310118098-898fd1e56f23.avif" alt="Dev1">
+  <ul>
+    <li>Alex "CodeBlade"</li>
+    <li>Maya "NeonScript"</li>
+  </ul>
+
+  <h2>Gamers</h2>
+  <img src="./download.png" alt="Gamer1">
+  <ul>
+    <li>Rex "ShadowStorm"</li>
+    <li>Lina "PixelQueen"</li>
+  </ul>
+
+  <h2>Teams</h2>
+  <img src="./futuristic-business-office-space.jpg" alt="Team1">
+  <ul>
+    <li>NeonStrike</li>
+    <li>ByteRaiders</li>
+  </ul>
+
+  <h2>Designers</h2>
+  <img src="./cartoon-students-math-class.jpg" alt="Designer1">
+  <ul>
+    <li>Eli "GlowVector"</li>
+    <li>Sara "PixelMist"</li>
+  </ul>
+
+  <h2>Articles</h2>
+  <img src="./istockphoto-2227014762-612x612.webp" alt="News">
+  <p>📰 Cyberstorm AI Grid update</p>
+  <p>🎮 Shadow Run Quest unlocked</p>
+</div>
+
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Orbitron",Arial,sans-serif; }
+
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#000;
+}
+
+.container {
+  width:320px;
+  max-width:90vw;
+  background:#111;
+  border:2px solid #7CFC00; 
+  padding:20px;
+  box-shadow:0 0 20px #7CFC00, 0 0 40px #7CFC00 inset; 
+  color:#7CFC00; 
+  animation: neon-flicker 2s infinite;
+  overflow-y:auto;
+  max-height:80vh;
+}
+
+/* ===== HEADINGS ===== */
+.container h2 {
+  font-size:18px;
+  margin-bottom:10px;
+  text-shadow:0 0 5px #7CFC00, 0 0 10px #7CFC00, 0 0 20px #7CFC00;
+}
+
+/* ===== PARAGRAPHS & LISTS ===== */
+.container p, .container li {
+  font-size:14px;
+  line-height:1.5;
+  margin-bottom:8px;
+  color:#7CFC00;
+}
+.container ul { list-style: disc; padding-left:20px; margin-bottom:10px; }
+
+/* ===== IMAGES ===== */
+.container img {
+  width:100%;
+  max-height:120px;
+  object-fit:cover;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:1px solid #7CFC00;
+  box-shadow:0 0 15px #7CFC00;
+}
+
+/* ===== NEON FLICKER ===== */
+@keyframes neon-flicker{
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    box-shadow:0 0 10px #7CFC00, 0 0 20px #7CFC00 inset;
+  }
+  20%, 22%, 24%, 55% {
+    box-shadow:0 0 25px #7CFC00, 0 0 40px #7CFC00 inset;
+  }
+}
+
+/* ===== OPTIONAL: HOVER EFFECT ===== */
+.container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+</style>
+
+
+</body>
+</html>

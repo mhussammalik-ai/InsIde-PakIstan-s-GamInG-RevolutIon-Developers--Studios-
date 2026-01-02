@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Portal - Nexus</title>
+<link rel="icon" type="image/png" href="./170ba712-048d-4b28-9853-f7a60df06289-md.jpeg">
+
+</head>
+<body>
+
+<!-- ===== Nexus Full-Screen Section ===== -->
+<section id="nexus" class="game-section">
+  <div class="container">
+    <h1>Nexus</h1>
+    <span class="subtitle">Enter a world of limitless possibilities</span>
+    <div class="game-content">
+      <p>
+        Nexus is a dynamic open-world game where players explore vast futuristic cities
+        and uncharted landscapes. Navigate complex challenges, solve puzzles, and interact
+        with intelligent AI characters to uncover the mysteries of this expansive universe.
+      </p>
+      <ul>
+        <li>Genre: Sci-Fi Adventure</li>
+        <li>Platform: PC & Console</li>
+        <li>Features: Open World, AI-driven NPCs, Multiplayer Challenges</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== FULL SCREEN NEXUS SECTION ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  overflow: hidden;
+}
+
+#nexus {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./premium_photo-1687919416847-b3ed0936df73.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #7CFC00; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#nexus::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 0;
+}
+
+#nexus .container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* ===== HEADINGS & TEXT ===== */
+#nexus h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+  color: #7CFC00;
+  text-shadow: 0 0 5px #7CFC00, 0 0 10px #7CFC00, 0 0 20px #7CFC00;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards 0.2s;
+}
+
+#nexus .subtitle {
+  display: block;
+  font-size: 24px;
+  color: #7CFC00;
+  text-shadow: 0 0 5px #7CFC00, 0 0 10px #7CFC00;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards 0.6s;
+}
+
+#nexus .game-content p,
+#nexus .game-content ul li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+  color: #7CFC00;
+}
+
+#nexus .game-content p:nth-child(1) { animation-delay: 1s; }
+#nexus .game-content ul li:nth-child(1) { animation-delay: 1.2s; }
+#nexus .game-content ul li:nth-child(2) { animation-delay: 1.4s; }
+#nexus .game-content ul li:nth-child(3) { animation-delay: 1.6s; }
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== NEON HOVER EFFECT ===== */
+#nexus h1:hover,
+#nexus .subtitle:hover,
+#nexus .game-content p:hover,
+#nexus .game-content ul li:hover {
+  text-shadow: 0 0 10px #7CFC00, 0 0 20px #7CFC00, 0 0 40px #7CFC00;
+  transition: text-shadow 0.3s ease;
+}
+</style>
+
+
+</body>
+</html>
