@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nehengi | Contact Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">Nehengi</div>
+  <ul>
+    <li><a href="#hero">Nexus</a></li>
+    <li><a href="#contact">Signa</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+<h1>Contact Nehengi</h1>
+<p>Reach out to support our creators, partnerships, or inquiries</p>
+</section>
+
+<!-- ===== CONTACT INFORMATION ===== -->
+<section class="contact-info">
+  <div class="contact-card">
+    <h3>Location</h3>
+    <p>123 Gaming Street, Cyber City, Pakistan</p>
+  </div>
+  <div class="contact-card">
+    <h3>Email</h3>
+    <p>support@nehengi.com</p>
+  </div>
+  <div class="contact-card">
+    <h3>Phone / WhatsApp</h3>
+    <p>+92 300 1234567</p>
+  </div>
+  <div class="contact-card">
+    <h3>Social Media</h3>
+    <p>
+      <a href="#">Facebook</a> | 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="#">WhatsApp</a>
+    </p>
+  </div>
+</section>
+
+<style>
+/* ===== GLOBAL STYLES ===== */
+body{
+  margin:0;
+  font-family:'Orbitron',sans-serif;
+  background:#050507;
+  color:#39ff14;
+  scroll-behavior:smooth;
+}
+h1,h2,h3,p,label{margin:0;}
+a{text-decoration:none;color:#39ff14;transition:0.3s;}
+a:hover{color:#050505;background:#39ff14;padding:5px 8px;border-radius:6px;}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;
+  background:#0a0a0f;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 30px;z-index:1000;border-bottom:2px solid #39ff14;
+}
+nav .logo{font-size:24px;font-weight:bold;text-shadow:0 0 10px #39ff14;}
+nav ul{display:flex;list-style:none;gap:20px;}
+nav ul li a{color:#39ff14;padding:8px 12px;border-radius:6px;transition:0.3s;}
+nav ul li a:hover{background:#39ff14;color:#050505;box-shadow:0 0 20px #39ff14;}
+
+/* ===== HERO / HEADER ===== */
+.hero{
+  text-align:center;padding:150px 20px 100px;
+  background:linear-gradient(135deg,#050507,#0a0a0f);
+}
+.hero h1{font-size:50px;text-shadow:0 0 20px #39ff14;}
+.hero p{font-size:18px;color:#baffba;margin-top:10px;}
+
+/* ===== CONTACT INFO ===== */
+.contact-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+}
+.contact-card{
+  background:#0a0a0f;
+  border:2px solid #39ff14;
+  border-radius:16px;
+  padding:20px;
+  text-align:center;
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.contact-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 25px #39ff14;
+}
+.contact-card h3{margin-bottom:10px;font-size:20px;}
+.contact-card p{font-size:14px;color:#baffba;}
+
+/* ===== CONTACT FORM ===== */
+.contact-form{
+  max-width:700px;
+  margin:50px auto 100px;
+  background:#0a0a0f;
+  border:2px solid #39ff14;
+  border-radius:16px;
+  padding:40px 30px;
+  box-shadow:0 0 30px rgba(57,255,20,0.4);
+}
+.contact-form h2{
+  text-align:center;
+  font-size:38px;
+  text-shadow:0 0 20px #39ff14;
+  margin-bottom:30px;
+}
+.contact-form .form-group{
+  margin-bottom:20px;
+}
+.contact-form label{
+  font-size:13px;color:#9aff9a;margin-bottom:5px;display:block;
+}
+.contact-form input, .contact-form textarea{
+  width:100%;
+  padding:12px;
+  background:#050505;
+  border:1px solid #39ff14;
+  color:#39ff14;
+  border-radius:6px;
+  transition:0.3s;
+}
+.contact-form input:focus,.contact-form textarea:focus{
+  border-color:#baffba;
+  box-shadow:0 0 10px #39ff14;
+  outline:none;
+}
+.contact-form textarea{resize:none;}
+.contact-form .checkbox{
+  display:flex;align-items:center;gap:10px;font-size:12px;margin-top:10px;
+}
+.contact-form button{
+  width:100%;
+  padding:14px;
+  margin-top:20px;
+  background:transparent;
+  border:2px solid #39ff14;
+  color:#39ff14;
+  cursor:pointer;
+  letter-spacing:2px;
+  border-radius:8px;
+  transition:all 0.3s;
+}
+.contact-form button:hover{
+  background:#39ff14;
+  color:#050505;
+  box-shadow:0 0 30px #39ff14;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0a0a0f;
+  border-top:2px solid #39ff14;
+  text-align:center;
+  padding:30px 20px;
+}
+footer a{margin:0 10px;transition:0.3s;}
+footer a:hover{color:#050505;background:#39ff14;padding:5px 8px;border-radius:6px;}
+@media(max-width:600px){
+  .contact-card{margin-bottom:20px;}
+}
+</style>
+
+
+<!-- ===== CONTACT FORM ===== -->
+<section id="signa" class="contact-form">
+<h2>Send Us a Message</h2>
+<form id="contactForm">
+  <div class="form-group">
+    <label>Full Name</label>
+    <input type="text" placeholder="Your Name" required>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" placeholder="you@example.com" required>
+  </div>
+  <div class="form-group">
+    <label>Subject</label>
+    <input type="text" placeholder="Subject" required>
+  </div>
+  <div class="form-group">
+    <label>Message</label>
+    <textarea rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" required>
+    <span>I agree this message is for legitimate inquiries only.</span>
+  </div>
+  <button type="submit">Send Message</button>
+</form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  &copy; 2026 Nehengi •
+  <a href="#">Facebook</a>
+  <a href="#">LinkedIn</a>
+  <a href="#">GitHub</a>
+  <a href="#">WhatsApp</a>
+</footer>
+
+<script>
+// ===== FORM SUBMISSION SIMULATION =====
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  alert("Thank you! Your message has been sent to Nehengi.");
+  this.reset();
+});
+</script>
+
+</body>
+</html>
