@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Portal – Vault</title>
+<link rel="icon" type="image/png" href="./170ba712-048d-4b28-9853-f7a60df06289-md.jpeg">
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <a href="index.html" class="logo-link">PAKGAMES</a>
+  <ul class="nav-menu">
+    <li><a href="nexus.html">Nexus</a></li>
+    <li><a href="vault.html">Vault</a></li>
+    <li><a href="arena.html">Arena</a></li>
+    <li><a href="questline.html">Questline</a></li>
+    <li><a href="echoes.html">Echoes</a></li>
+    <li><a href="pulse.html">Pulse</a></li>
+    <li><a href="signa.html">Signa</a></li>
+  </ul>
+</nav>
+
+<!-- ===== SIGNa SECTION ===== -->
+<section id="signa" class="game-section reveal">
+  <div class="container">
+    <div class="signa-grid">
+      <div class="signa-text">
+        <h1>Signa</h1>
+        <p class="subtitle">Where symbols shape reality</p>
+        <p class="description">
+          Signa is a strategy-driven universe where every symbol, mark,
+          and decision carries meaning. Players decode ancient signals,
+          unlock hidden systems, and control outcomes using intelligence
+          rather than speed.
+        </p>
+        <ul class="features">
+          <li>Genre: Strategy / Puzzle</li>
+          <li>Core Focus: Logic & Decisions</li>
+          <li>Environment: Minimal Futuristic World</li>
+          <li>Gameplay: Symbol-Based Mechanics</li>
+        </ul>
+      </div>
+      <div class="signa-image">
+        <img src="./download.jpg" alt="Signa World">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #000;
+  color: #00ff00;
+  scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(90deg, #050912, #070c16, #050912);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, links right */
+  padding: 0 20px; /* distance from screen edges */
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+/* LEFT LOGO */
+.logo-link {
+  color: #00ff00;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-shadow: 0 0 10px #00ff00;
+  margin-left: 10px; /* small distance from left edge */
+}
+
+/* RIGHT NAV LINKS */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-right: 10px; /* distance from right edge */
+}
+
+.nav-menu li a {
+  color: #7CFC00;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 9px 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00ff00;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+  color: #f2f4f2;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    flex-direction: column;
+    width: 200px;
+    background: #050912;
+    display: none;
+    padding: 15px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+
+/* ===== SIGNa SECTION ===== */
+.game-section {
+  min-height: 100vh;
+  padding: 100px 20px 40px; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #00ff00;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #060b14, #0b1f2a);
+}
+
+/* Grid layout */
+.signa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Text styling */
+.signa-text h1 {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 30px #00ff00;
+  transition: text-shadow 0.3s ease;
+}
+.signa-text h1:hover {
+  text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 60px #00ff00;
+}
+
+.signa-text .subtitle {
+  color: #00ff00;
+  margin: 10px 0 25px;
+  font-size: 1.1rem;
+}
+
+.signa-text .description {
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 25px;
+  color: #00ff00;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 8px 0;
+  border-left: 3px solid #00ff00;
+  padding-left: 12px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #00ff00;
+}
+
+/* Image styling */
+.signa-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(0, 255, 0, 0.25);
+  transform: scale(0.95);
+  transition: transform 0.6s ease;
+}
+
+.signa-image img:hover {
+  transform: scale(1);
+}
+
+/* Reveal animation */
+.reveal {
+  animation: revealFade 1.4s ease forwards;
+}
+
+@keyframes revealFade {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .signa-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+
+</body>
+</html>
